@@ -1,7 +1,7 @@
 import React from "react";
-import "../App.css";
+
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
-import graph from "../assets/sampleGraph.png";
+import graph from "../public/assets/sampleGraph.png";
 import PoolContent from "../components/PoolContent";
 
 const Home = () => {

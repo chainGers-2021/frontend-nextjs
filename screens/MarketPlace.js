@@ -1,7 +1,6 @@
 import React from "react";
 import Particles from "react-particles-js";
-import particlesConfig from "../particle-config";
-import "../App.css";
+import particlesConfig from "../config/particlejs-config";
 
 import ProductCard from "../components/ProductCard";
 
@@ -13,7 +12,8 @@ const MarketPlace = () => {
         width: "100%",
         height: "100%",
         overflow: "scroll",
-      }}>
+      }}
+    >
       <div
         style={{
           display: "flex",
@@ -27,7 +27,8 @@ const MarketPlace = () => {
           fontSize: 60,
           color: "#79D2E5",
           textShadow: "2px 2px black",
-        }}>
+        }}
+      >
         Marketplace
       </div>
       <div className="card-grid">

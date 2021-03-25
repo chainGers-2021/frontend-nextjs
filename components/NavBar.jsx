@@ -1,25 +1,26 @@
 import React from "react";
-import "../App.css";
-import logo from "../assets/logo.png";
-import searchIcon from "../assets/search.png";
-import { Link } from "react-router-dom";
-const NavBar = ({ handleCreate, home }) => {
+import Link from "next/link";
+
+import logo from "../public/assets/logo.png";
+import searchIcon from "../public/assets/search.png";
+
+const NavBar = () => {
   return (
     <div className="navBar">
       <img src={logo} alt="logo" className="logo navBarElement" />
       <div style={{ margin: 20 }}>
-        <Link to="/">HOME</Link>
+        <Link href="/">HOME</Link>
       </div>
       <div style={{ margin: 20 }}>
-        <Link to="/create">CREATE</Link>
+        <Link href="/create">CREATE</Link>
       </div>
       <div style={{ margin: 20 }}>
-        <Link to="/marketplace">NGOs</Link>
+        <Link href="/marketplace">NGOs</Link>
       </div>
       <div className="searchField">
         <input placeholder="Search for pools" />
       </div>
-      <div class="searchButton">
+      <div className="searchButton">
         <button>
           <img
             src={searchIcon}
