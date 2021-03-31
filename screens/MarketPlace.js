@@ -3,6 +3,7 @@ import Particles from "react-particles-js";
 import particlesConfig from "../config/particlejs-config";
 
 import ProductCard from "../components/ProductCard";
+import styles from "../styles/MarketPlace.module.css";
 
 const MarketPlace = () => {
   return (
@@ -31,7 +32,7 @@ const MarketPlace = () => {
       >
         Marketplace
       </div>
-      <div className="card-grid">
+      <div className={styles.cardGrid}>
         <ProductCard />
         <ProductCard />
         <ProductCard />
