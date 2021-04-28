@@ -1,0 +1,65 @@
+@import ./Variables
+@import ./MediaQueries
+
+.container
+  display: flex
+  align-items: center
+  justify-content: center
+
+  height: 92vh
+  width: 100%
+
+  @include max-tablet-width
+    height: max-content
+    width: 90%
+
+    margin: 0 auto
+    padding: 3rem
+
+.details
+  display: flex
+  flex-direction: column
+  background: $card-background
+
+  padding: 1.75rem
+
+  border-radius: 12px
+
+.inputs
+  font-size: 1rem
+  text-align: center
+
+  background: $input-background
+  color: $font-color
+
+  padding: 0.75rem
+  margin: 0.475rem
+
+  border-radius: 12px
+
+  @include max-tablet-width
+    font-size: 0.875rem
+    padding: 0.625rem
+
+.buttonsContainer
+  display: flex
+  flex-direction: column
+
+.button
+  font-size: 1rem
+
+  background: $green
+  color: $font-color
+
+  padding: 0.75rem
+  margin: 0.475rem
+
+  border-radius: 12px
+
+  cursor: pointer
+
+  &:nth-of-type(2)
+    background: $red
+
+  @include max-tablet-width
+    font-size: 0.875rem

@@ -1,0 +1,24 @@
+@import "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,900&display=swap"
+
+@import ./Variables
+
+*
+  margin: 0
+  padding: 0
+  font-family: $primary-font
+  box-sizing: border-box
+
+body
+  min-height: 100vh
+  background: linear-gradient(-45deg,$secondary-color 0%, $primary-color 16%, $primary-color 95%, $secondary-color)
+
+input
+  outline: none
+  border: 1px solid #00000000
+
+  &:focus
+    border: 1px solid #909090
+
+button
+  outline: none
+  border: none
