@@ -1,0 +1,72 @@
+@import ./Variables
+@import ./MediaQueries
+
+.container
+  width: 90%
+
+  position: relative
+  display: flex
+  justify-content: flex-end
+  margin: 1.5rem auto
+
+.selectContainer
+  position: absolute
+  display: none
+  width: 100%
+
+  flex-direction: column
+
+  background: $input-background
+  border-radius: 0.75rem
+
+  margin: 0.25rem 0
+
+  @include max-mobile-width
+    position: initial
+
+    display: grid
+    grid-auto-flow: column
+    gap: 1rem
+
+    background: none
+
+    & :nth-last-of-type(n+2)
+      margin-right: 0
+
+.cards
+  width: max-content  
+  padding: 1rem
+
+  font-size: 0.875rem
+
+  background: $input-background
+  color: $font-color
+
+  border-radius: 0.75rem
+
+  cursor: pointer
+
+  @include max-tablet-width
+    font-size: 0.75rem
+
+  @include max-mobile-width
+    padding: 0.625rem 0.875rem  
+
+.selectButton
+  @include max-mobile-width
+    display: none
+
+.overflow
+  position: relative
+
+  @include max-mobile-width
+    overflow-y: hidden
+    overflow-x: scroll
+
+    -ms-overflow-style: none
+    scrollbar-width: none
+
+  &:hover,
+  &:focus-within
+    & div
+      display: flex
